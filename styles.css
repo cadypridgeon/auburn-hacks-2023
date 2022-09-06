@@ -18,7 +18,8 @@ h1 {
 
 h2, 
 h3, 
-body {
+body,
+a {
     font-family: "Poppins", serif;
 }
 
@@ -40,17 +41,6 @@ a {
     align-items: center;
     padding: 2.058vw 2.5vw;
     gap: 0.661vw;
-/* 
-    position: absolute;
-    left: 3.69%;
-    right: 80.18%;
-    top: 15.36%;
-    bottom: 17.42%;
-
-    width: 76px;
-    height: 38px; */
-
-    /* Large Description */
     font-weight: 600;
     font-size: 1.653vw;
     color: var(--primary);
@@ -67,14 +57,9 @@ a {
 }
 
 .section {
-    /* background-repeat: no-repeat; */
     background-size: cover; 
     background-position: center;
-    /* display: -webkit-box; */
-    /* display: -ms-flexbox; */
     display: flex;
-    /* -webkit-box-pack: center; */
-    /* -ms-flex-pack: center; */
     justify-content: center
 }
 
@@ -117,7 +102,7 @@ a {
     position: absolute;
     width: 30.489vw;
     height: 4.630vw;
-    top: 34vw;
+    top: 36vw;
 
     font-weight: 600;
     text-align: center;
