@@ -83,17 +83,21 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    min-height: 59vw;
 }
 
-.home-content {
+.home-words {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    line-height: 0%;
+    text-align: center;
+    margin-top: 220px;
 }
 
-.home-section {
-    min-height: 59vw
+.home-button {
+    margin-top: 40px;
 }
 
 #home .Title {
@@ -101,40 +105,28 @@ a {
     font-weight: 400;
     font-size: 9.259vw;
     color: var(--primary);
-    top: 9vw;
-    position: absolute;
-    /* margin-top: 20vh; */
 }
 
 #home .Date {
-    text-align: center;
     font-weight: 600;
     font-size: 3.307vw;
     color: var(--primary);
-    top: 23vw;
-    position: absolute;
-    /* margin-top: -10vh; */
 }
 
 #home .Button {
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.661vw;
     width: 461px;
     height: 70px;
     font-weight: 600;
-    text-align: center;
     font-size: 25px;
     color: var(--primary);
     background: var(--accent);
     border: 0.132vw solid var(--primary);
     border-radius: 0.529vw;
     transition: background .3s ease-in-out;
-    top: 32.5vw;
-    position: absolute;
 }
 
 #home .Button:hover {
