@@ -54,20 +54,21 @@ a {
     transition: color .3s ease-in-out;
 }
 
+#navbar .sections a:hover {
+    color: var(--secondary);
+}
+
 #navbar .icons {
-    margin-right: 17.8vw;
+    margin-right: 16.8vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
 }
 
 #navbar .icons a {
-    color: var(--primary);
-    font-size: 30px;
-    margin-left: 1.98vw;
-    transition: color .3s ease-in-out;
-}
-
-#navbar .sections a:hover,
-#navbar .icons a:hover {
-    color: var(--secondary);
+    width: 40px;
+    height: 40px;
+    position:relative;
 }
 
 .bg-top {
@@ -275,17 +276,35 @@ a {
     justify-content: center;
     align-items: center;
     padding-top: 70px;
-    gap: 40px;
+    gap: 30px;
 }
 
 #footer .icons a {
-    color: var(--primary);
-    font-size: 40px;
-    transition: color .3s ease-in-out;
+    width: 50px;
+    height: 50px;
+    position:relative;
 }
 
-#footer .icons a:hover {
-    color: var(--secondary);
+.icons a img {
+    transition: opacity .3s ease-in-out;
+}
+
+.icons a img:first-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.icons a img:last-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.icons a:hover img:first-child {
+    opacity:0;
 }
 
 #footer .copyright {
