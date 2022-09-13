@@ -13,6 +13,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+}
+
 h1 {
     font-family: 'Ragile', serif;
 }
@@ -29,16 +33,16 @@ a {
     text-decoration: none;
 }
 
-a:link {
-    color: var(--accent);
-}
-
-a:visited {
-    color: var(--accent-dark);
-}
-
 strong {
     font-weight: 900;
+}
+
+#bg-cover {
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    align-items: center;
+    background-image: linear-gradient(90deg, #729D8E 0%, #6A9B8F 14.29%, #619990 28.57%, #589691 42.86%, #4F9493 57.14%, #469195 71.43%, #3C8F98 85.71%, #338C9A 100%);
 }
 
 #navbar {
@@ -81,23 +85,6 @@ strong {
     width: 40px;
     height: 40px;
     position:relative;
-}
-
-.bg-top {
-    width: 100%;
-    height: 100vh;
-    min-height: 700px;
-    align-items: center;
-}
-
-/* .background-bottom {
-    width: 100%;
-    height: 261px;
-    align-items: center;
-} */
-
-.bg-gradient {
-    background-image: linear-gradient(90deg, #729D8E 0%, #6A9B8F 14.29%, #619990 28.57%, #589691 42.86%, #4F9493 57.14%, #469195 71.43%, #3C8F98 85.71%, #338C9A 100%);
 }
 
 #home {
@@ -190,22 +177,6 @@ strong {
     }
 }
 
-.line-left {
-    background: #FFFFFF;
-    border: 3px solid #FFFFFF;
-    transform: rotate(-135deg);
-    width: 20px;
-    margin-right: -5.5px;
-}
-
-.line-right {
-    background: #FFFFFF;
-    border: 3px solid #FFFFFF;
-    transform: rotate(135deg);
-    width: 20px;
-    margin-left: -5.5px;
-}
-
 #about {
     scroll-margin-top: 275px;
 }
@@ -275,7 +246,62 @@ strong {
     background: var(--accent);
 }
 
+.section#faq .question {
+    color: var(--primary-dark);
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 32px 0px 32px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--primary-dark);
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    /* line-height: 0px; */
+    transition: 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+}
+  
+.section#faq .question:hover {
+    background-color: var(--secondary);
+}
+  
+.section#faq .answer {
+    padding: 0px 32px 0px 32px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: left;
+    color: var(--secondary-dark);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.section#faq button i{
+    transform: rotate(180deg);
+    transition: all 0.3s;
+  }   
+
+.section#faq button i.rotate{
+    transform: none;
+}
+
+.section#faq a:link {
+    color: var(--accent);
+}
+
+.section#faq a:visited {
+    color: var(--accent-dark);
+}
+
 #footer {
+    background-image: linear-gradient(-90deg, #729D8E 0%, #6A9B8F 14.29%, #619990 28.57%, #589691 42.86%, #4F9493 57.14%, #469195 71.43%, #3C8F98 85.71%, #338C9A 100%);
     width: 100%;
     height: 261px;
     display: flex;
@@ -300,6 +326,12 @@ strong {
     position:relative;
 }
 
+#footer .copyright {
+    display: flex;
+    color: var(--primary);
+    padding-bottom: 40px;
+}
+
 .icons a img {
     transition: opacity .3s ease-in-out;
 }
@@ -320,54 +352,4 @@ strong {
 
 .icons a:hover img:first-child {
     opacity:0;
-}
-
-#footer .copyright {
-    display: flex;
-    color: var(--primary);
-    padding-bottom: 40px;
-}
-
-.question {
-    color: var(--primary-dark);
-    background-color: var(--primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 32px 8px 32px;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid var(--primary-dark);
-    text-align: left;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 0px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-  
-.question:hover {
-background-color: var(--secondary);
-}
-  
-.answer {
-padding: 0 18px;
-width: 96%;
-background-color: #f2f2f2;
-max-height: 0;
-overflow: hidden;
-transition: max-height 0.2s ease-out;
-text-align: left;
-color: var(--secondary-dark);
-font-size: 18px;
-font-weight: 400;
-}
-
-button i{
-    transform: rotate(180deg);
-    transition: all 0.3s;
-  }   
-
-button i.rotate{
-    transform: none;
 }
