@@ -22,11 +22,23 @@ h3,
 body,
 button,
 a {
-    font-family: "Poppins", serif;
+    font-family: 'Poppins', serif;
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
+}
+
+a:link {
+    color: var(--accent);
+}
+
+a:visited {
+    color: var(--accent-dark);
+}
+
+strong {
+    font-weight: 900;
 }
 
 #navbar {
@@ -74,6 +86,7 @@ a {
 .bg-top {
     width: 100%;
     height: 100vh;
+    min-height: 700px;
     align-items: center;
 }
 
@@ -91,7 +104,8 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* min-height: 59vw; */
+    /* min-height: 300vw; */
+    position: relative;
 }
 
 #home .text {
@@ -101,19 +115,19 @@ a {
     flex-direction: column;
     line-height: 0%;
     text-align: center;
-    margin-top: 220px;
+    margin-top: 25vh;
 } 
 
 #home .title {
     text-align: center;
     font-weight: 400;
-    font-size: 135px;
+    font-size: 10vw;
     color: var(--primary);
 }
 
 #home .date {
     font-weight: 600;
-    font-size: 55px;
+    font-size: 4vw;
     color: var(--primary);
 }
 
@@ -138,9 +152,10 @@ a {
     background: var(--accent-dark);
 }
 
-#home .arrow {
+.arrow {
     position: absolute;
-    top: 88%;
+    bottom: 0;
+    margin-bottom: -18vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,15 +207,15 @@ a {
 }
 
 #about {
-    scroll-margin-top: 225px;
+    scroll-margin-top: 275px;
 }
 
 #faq {
-    scroll-margin-top: 225px;
+    scroll-margin-top: 175px;
 }
 
 #sponsors {
-    scroll-margin-top: 225px;
+    scroll-margin-top: 250px;
 }
 
 #content {
@@ -337,7 +352,8 @@ background-color: var(--secondary);
   
 .answer {
 padding: 0 18px;
-background-color: var(--primary);
+width: 96%;
+background-color: #f2f2f2;
 max-height: 0;
 overflow: hidden;
 transition: max-height 0.2s ease-out;
