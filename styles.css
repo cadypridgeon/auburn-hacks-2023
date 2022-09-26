@@ -126,7 +126,6 @@ strong {
 #navbar-mobile #menu-items {
     display: none;
     margin-bottom: 3vh;
-    
 }
 
 #navbar-mobile #menu-items a {
@@ -165,7 +164,7 @@ strong {
 }
 
 #home .text-mobile {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
