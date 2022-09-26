@@ -260,9 +260,9 @@ strong {
     align-items: center;
     text-align:center;
     width: 70vw;
-    padding: 8px 16px 8px 16px;
+    padding: 16px 32px 16px 32px;
     font-weight: 600;
-    font-size: 5vw;
+    font-size: 4vw;
     color: var(--primary);
     background: var(--accent);
     border: 0.132vw solid var(--primary);
@@ -481,11 +481,11 @@ strong {
     /* flex-direction: row; */
     justify-content: center;
     align-items: center;
-    padding: 8px 16px 8px 16px;
     width: 70vw;
+    padding: 16px 32px 16px 32px;
     font-weight: 600;
+    font-size: 4vw;
     text-align: center;
-    font-size: 18px;
     color: var(--primary);
     background: var(--accent-dark);
     border: 0.132vw solid var(--primary);
@@ -497,10 +497,6 @@ strong {
     #content-mobile .button {
         display: flex;
     }
-}
-
-#content-mobile .button:hover {
-    background: var(--accent);
 }
 
 .section#faq .question {
@@ -820,7 +816,7 @@ strong {
 } 
 
 #mlh-trust-badge-mobile {
-    display:block;
+    display:none;
     position:absolute;
     right:40px;
     top:0;
