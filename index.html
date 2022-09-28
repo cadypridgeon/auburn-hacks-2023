@@ -87,14 +87,17 @@
         </div> 
         <script>
           function showMenu() {
-            var x = document.getElementById("menu-items");
-            var y = document.getElementById("bg-cover");
-            if (x.style.display === "block") {
-              x.style.display = "none";
-              y.style.height = "100vh";
+            var menu = document.getElementById("menu-items");
+            var bg = document.getElementById("bg-cover");
+            var bar = document.getElementById("navbar-mobile");
+            if (menu.style.visibility==="visible") {
+              bar.style.maxHeight = "10vh";
+              menu.style.visibility = "hidden";
+              bg.style.height = "100vh";
             } else {
-              x.style.display = "block";
-              y.style.height = "130vh";
+              bar.style.maxHeight = "50vh";
+              bg.style.height = "130vh";
+              menu.style.visibility = "visible";
             }
           }
           </script>      
@@ -228,11 +231,11 @@
           for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
               this.classList.toggle("active");
-              var panel = this.nextElementSibling;
-              if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
+              var answer = this.nextElementSibling;
+              if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
               } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
+                answer.style.maxHeight = answer.scrollHeight + "px";
               } 
             });
           }
@@ -371,11 +374,11 @@
           for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
               this.classList.toggle("active");
-              var panel = this.nextElementSibling;
-              if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
+              var answer = this.nextElementSibling;
+              if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
               } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
+                answer.style.maxHeight = answer.scrollHeight + "px";
               } 
             });
           }
