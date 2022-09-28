@@ -553,7 +553,7 @@ strong {
     color: #3C8F98;
 }
 
-.section#faq-mobile .question {
+.section#faq-mobile .question-mobile {
     color: var(--primary-dark);
     background-color: var(--primary);
     display: flex;
@@ -572,11 +572,11 @@ strong {
     overflow: hidden;
 }
   
-.section#faq-mobile .question:hover {
+.section#faq-mobile .question-mobile:hover {
     background-color: var(--secondary);
 }
   
-.section#faq-mobile .answer {
+.section#faq-mobile .answer-mobile {
     padding: 0px 32px 0px 32px;
     width: 100%;
     box-sizing: border-box;
