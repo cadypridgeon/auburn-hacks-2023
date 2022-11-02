@@ -1,5 +1,15 @@
 @font-face {
+    font-family: 'toes';
+    src: url('../assets/fonts/Ragile.eot');
+    src: url('../assets/fonts/Ragile.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Ragile.woff2') format('woff2'),
+        url('../assets/fonts/Ragile.woff') format('woff'),
+        url('../assets/fonts/Ragile.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Ragile';
+<<<<<<< Updated upstream
     src: url('assets/fonts/Ragile.woff') format('woff');
 }
 
@@ -15,6 +25,24 @@ html {
 
 body {
     margin: 0;
+=======
+    src: url('assets/fonts/Ragile-ywgzq.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Margin';
+    src: url('assets/fonts/margin_demo-webfont.woff2') format('woff2'),
+         url('assets/fonts/margin_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'okemoregular';
+    src: url('assets/fonts/okemo-webfont.woff2') format('woff2'),
+         url('assets/fonts/okemo-webfont.woff') format('woff');
+>>>>>>> Stashed changes
 }
 
 h1 {
