@@ -9,7 +9,6 @@
 
 @font-face {
     font-family: 'Ragile';
-<<<<<<< Updated upstream
     src: url('assets/fonts/Ragile.woff') format('woff');
 }
 
@@ -25,24 +24,6 @@ html {
 
 body {
     margin: 0;
-=======
-    src: url('assets/fonts/Ragile-ywgzq.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Margin';
-    src: url('assets/fonts/margin_demo-webfont.woff2') format('woff2'),
-         url('assets/fonts/margin_demo-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'okemoregular';
-    src: url('assets/fonts/okemo-webfont.woff2') format('woff2'),
-         url('assets/fonts/okemo-webfont.woff') format('woff');
->>>>>>> Stashed changes
 }
 
 h1 {
@@ -112,7 +93,7 @@ strong {
 #navbar .icons a {
     width: 40px;
     height: 40px;
-    position:relative;
+    position: relative;
 }
 
 @media (max-width:655px) {
@@ -168,9 +149,9 @@ strong {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
-    line-height:2vh;
+    line-height: 2vh;
     display: block;
-    margin-left:7vw;
+    margin-left: 7vw;
 }
 
 #home {
@@ -190,7 +171,7 @@ strong {
     line-height: 0%;
     text-align: center;
     margin-top: 25vh;
-} 
+}
 
 @media (max-width:655px) {
     #home .text {
@@ -204,7 +185,7 @@ strong {
     align-items: center;
     flex-direction: column;
     text-align: center;
-} 
+}
 
 @media (max-width:655px) {
     #home .text-mobile {
@@ -293,7 +274,7 @@ strong {
     display: none;
     justify-content: center;
     align-items: center;
-    text-align:center;
+    text-align: center;
     width: 70vw;
     padding: 16px 32px 16px 32px;
     font-weight: 600;
@@ -552,11 +533,11 @@ strong {
     cursor: pointer;
     overflow: hidden;
 }
-  
+
 .section#faq .question:hover {
     background-color: var(--secondary);
 }
-  
+
 .section#faq .answer {
     padding: 0px 32px 0px 32px;
     width: 100%;
@@ -571,12 +552,12 @@ strong {
     font-weight: 400;
 }
 
-.section#faq button i{
+.section#faq button i {
     transform: rotate(180deg);
     transition: all 0.3s;
-  }   
+}
 
-.section#faq button i.rotate{
+.section#faq button i.rotate {
     transform: none;
 }
 
@@ -606,11 +587,11 @@ strong {
     cursor: pointer;
     overflow: hidden;
 }
-  
+
 .section#faq-mobile .question-mobile:hover {
     background-color: var(--secondary);
 }
-  
+
 .section#faq-mobile .answer-mobile {
     padding: 0px 32px 0px 32px;
     width: 100%;
@@ -625,12 +606,12 @@ strong {
     font-weight: 400;
 }
 
-.section#faq-mobile button i{
+.section#faq-mobile button i {
     transform: rotate(180deg);
     transition: all 0.3s;
-  }   
+}
 
-.section#faq-mobile button i.rotate{
+.section#faq-mobile button i.rotate {
     transform: none;
 }
 
@@ -677,7 +658,7 @@ strong {
 #footer .icons a {
     width: 50px;
     height: 50px;
-    position:relative;
+    position: relative;
 }
 
 @media (max-width:655px) {
@@ -726,7 +707,7 @@ strong {
 #footer-mobile .icons a {
     width: 40px;
     height: 40px;
-    position:relative;
+    position: relative;
 }
 
 @media (max-width:655px) {
@@ -767,33 +748,36 @@ strong {
 }
 
 .icons a:hover img:first-child {
-    opacity:0;
+    opacity: 0;
 }
 
-.checkbox2:checked + label > .hamburger2 > .bar1{
+.checkbox2:checked+label>.hamburger2>.bar1 {
     transform: translateX(40px);
     background-color: transparent;
 }
 
-.checkbox2:checked + label > .hamburger2 > .bar2{
+.checkbox2:checked+label>.hamburger2>.bar2 {
     transform: rotate(45deg);
 }
 
-.checkbox2:checked + label > .hamburger2 > .bar3{
+.checkbox2:checked+label>.hamburger2>.bar3 {
     transform: rotate(-45deg);
 }
 
-.checkbox2:checked + label > .hamburger2 > .bar4{
+.checkbox2:checked+label>.hamburger2>.bar4 {
     transform: translateX(-40px);
     background-color: transparent;
 }
 
 .visuallyHidden {
-    position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; 
-    margin: -1px; padding: 0; border: 0; 
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
 }
 
 .hamburger {
@@ -813,7 +797,7 @@ strong {
     display: block;
     border-radius: 4px;
     transition: all 0.4s ease-in-out;
-    position: absolute; 
+    position: absolute;
 }
 
 .bar1 {
@@ -834,29 +818,29 @@ strong {
 }
 
 #mlh-trust-badge {
-    display:block;
-    max-width:100px;
-    min-width:60px;
-    position:fixed;
-    right:50px;
-    top:0;
-    width:10%;
-    z-index:10000;
+    display: block;
+    max-width: 100px;
+    min-width: 60px;
+    position: fixed;
+    right: 50px;
+    top: 0;
+    width: 10%;
+    z-index: 10000;
 }
 
 @media (max-width:655px) {
     #mlh-trust-badge {
-        display:none;
+        display: none;
     }
-} 
+}
 
 #mlh-trust-badge-mobile {
-    display:none;
-    position:absolute;
-    right:40px;
-    top:0;
-    width:15vw;
-    z-index:10000;
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 15vw;
+    z-index: 10000;
 }
 
 @media (max-width:655px) {
