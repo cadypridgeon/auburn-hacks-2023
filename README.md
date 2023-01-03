@@ -1,2 +1,2 @@
-# auburn-hacks-2023
-Repository for the Auburn Hacks 2023 placeholder website.
+# auburn-hacks-placeholder
+Auburn Hacks 2023 placeholder website.
